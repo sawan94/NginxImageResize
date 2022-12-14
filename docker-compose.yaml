@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+    imageserver:
+        build: .
+        ports:
+            - 80:80
+        volumes:
+            - ./images:/data/images
+            - ./logs:/var/log/nginx
